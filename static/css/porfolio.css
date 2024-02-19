@@ -1,9 +1,10 @@
 
 /* mobile view  */
 @media(max-width: 800px) {
-
-
-    
+    .portfolio-main {
+        margin: 3rem 1rem;
+        padding: 0.5rem;
+    }
 }
 
 /* desktop view  */

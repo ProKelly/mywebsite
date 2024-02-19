@@ -34,6 +34,38 @@
 /* mobile view  */
 @media(max-width: 800px) {
 
+    .resume {
+        padding: 5rem 1.5rem;
+    }
+    
+    .resume .resume-info {
+        display: grid;
+        gap: 20px;
+    }
+    .resume-info>div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color:  #262f36;
+        box-shadow: 1px 2px 3px #00abf0;
+    }
+    .resume-info div h2 {
+        padding: 10px 0;
+    }
+    .resume-info div h3 {
+        padding: 0 0 5px 0;
+        color: #00abf0;
+    }
+    .resume-info div p {
+        
+    }
+    .resume-info div ul {
+        padding: 10px 1.5rem;
+        list-style:circle;
+    }
+    .resume div ul li {
+        padding: 5px 0;
+    }
 
 }
 
@@ -46,7 +78,38 @@
 
 /* desktop view  */
 @media(min-width: 800px) {
-
+    .resume {
+        padding: 5rem 1.5rem;
+    }
     
-
+    .resume .resume-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .resume-info>div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color:  #262f36;
+        box-shadow: 1px 2px 3px #00abf0;
+    }
+    .resume-info div h2 {
+        padding: 10px 0;
+    }
+    .resume-info div h3 {
+        padding: 0 0 5px 0;
+        color: #00abf0;
+    }
+    .resume-info div p {
+        
+    }
+    .resume-info div ul {
+        padding: 10px 1.5rem;
+        list-style:circle;
+    }
+    .resume div ul li {
+        padding: 5px 0;
+    }
 }
