@@ -26,6 +26,13 @@
         border-radius: 20px;
         margin: 0 auto;
     }
+
+    @media(max-width: 300px) {
+        .about .photo {
+            width: 15rem;
+            height: 18rem;
+        }
+    }
     
 
 }
