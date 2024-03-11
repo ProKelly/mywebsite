@@ -21,7 +21,6 @@ const btn_app = document.querySelector('.btn-app');
 const btn_api = document.querySelector('.btn-api');
 const portfolio_display_work = document.querySelector('.portfolio-display-work');
 
-document.addEventListener('DOMContentLoaded', ()=>{
 portfolio_display_work.innerHTML = `
 <div>
       <div class="porfolio-work-images">
@@ -34,7 +33,6 @@ portfolio_display_work.innerHTML = `
       </div>  
 </div>
 `;
-});
 btn_all.style.backgroundColor = '#00abf0'
 
 
