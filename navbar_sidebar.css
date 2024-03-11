@@ -16,8 +16,8 @@
 
 .sidebar.is-active {width: 100%;left: 0;}
 
-.sidebar a{padding: 15px;text-decoration: none;transition: 0.3s;color: #ededed;
-        z-index: 100;}
+.sidebar a{display:block; text-align:center;padding: 15px;text-decoration: none;transition: 0.3s;color: #ededed;
+        z-index: 100;width: 100%;}
 .sidebar a:visited {
     text-decoration:underline #00abf0 1px;
 }
