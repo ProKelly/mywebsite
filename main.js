@@ -4,11 +4,11 @@ const talk_btn = document.getElementById('talk-btn');
 
 hire_me_btn.addEventListener('click', (e)=>{
    e.preventDefault();
-   window.location.href = "/templates/contact.html";
+   window.location.href = "./contact.html";
 });
 talk_btn.addEventListener('click', (e)=>{
    e.preventDefault();
-   window.location.href = "/templates/resume.html";
+   window.location.href = "./resume.html";
 });
 
 
@@ -26,11 +26,11 @@ portfolio_display_work.innerHTML = `
 <div>
       <div class="porfolio-work-images">
          <p>smartAgro connect</p>
-         <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+         <img src="./smartAgriculture.jpeg" alt="image" title="image">
       </div> 
       <div class="porfolio-work-images">
          <p>smartAgro connect</p>
-         <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+         <img src="./smartAgriculture.jpeg" alt="image" title="image">
       </div>  
 </div>
 `;
@@ -43,11 +43,11 @@ btn_all.addEventListener('click', () =>{
    <div>
          <div class="porfolio-work-images">
             <p>smartAgro connect</p>
-            <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+            <img src="./smartAgriculture.jpeg" alt="image" title="image">
          </div> 
          <div class="porfolio-work-images">
             <p>smartAgro connect</p>
-            <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+            <img src="./smartAgriculture.jpeg" alt="image" title="image">
          </div>  
    </div>
    `;
@@ -62,7 +62,7 @@ btn_app.addEventListener('click', ()=>{
    <div>
       <div class="porfolio-work-images">
          <p>smartAgro connect</p>
-         <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+         <img src="./smartAgriculture.jpeg" alt="image" title="image">
       </div>  
    </div>
    `;
@@ -76,7 +76,7 @@ btn_api.addEventListener('click', ()=>{
    <div>
       <div class="porfolio-work-images">
          <p>smartAgro connect</p>
-         <img src="/static/imgs/smartAgriculture.jpeg" alt="image" title="image">
+         <img src="./smartAgriculture.jpeg" alt="image" title="image">
       </div>  
    </div>
    `;
