@@ -12,8 +12,8 @@ portfolio_display_work.innerHTML = `
          <img src="./smartAgriculture.jpeg" alt="image" title="image">
       </div> 
       <div class="porfolio-work-images">
-         <p>smartAgro connect</p>
-         <img src="./smartAgriculture.jpeg" alt="image" title="image">
+         <p>stream API</p>
+         <img src="./learn4.jpeg" alt="image" title="image">
       </div>  
 </div>
 `;
@@ -28,8 +28,8 @@ btn_all.addEventListener('click', () =>{
             <img src="./smartAgriculture.jpeg" alt="image" title="image">
          </div> 
          <div class="porfolio-work-images">
-            <p>smartAgro connect</p>
-            <img src="./smartAgriculture.jpeg" alt="image" title="image">
+            <p> stream API</p>
+            <img src="./learn4.jpeg" alt="image" title="image">
          </div>  
    </div>
    `;
@@ -57,8 +57,8 @@ btn_api.addEventListener('click', ()=>{
    portfolio_display_work.innerHTML = `
    <div>
       <div class="porfolio-work-images">
-         <p>smartAgro connect</p>
-         <img src="./smartAgriculture.jpeg" alt="image" title="image">
+         <p>stream API</p>
+         <img src="./learn4.jpeg" alt="image" title="image">
       </div>  
    </div>
    `;
