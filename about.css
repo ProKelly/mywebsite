@@ -33,7 +33,41 @@
             height: 24rem;
         }
     }
+
+    .about .progress-wrapper {
+        margin: 1rem auto;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+    }
     
+    .about .progress-wrapper .progress-bar{
+       padding: 10px;
+       background-color: #00abf0;
+       border-radius: 5px;
+       width: 100%;
+       transition: width 5s ease-in-out;
+    }
+    
+    .about .progress-wrapper .percentage-tip {
+        position: absolute;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        color: white;
+     }
+
+     .contact-me {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #00acf0a4;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        margin: 1.5rem auto 0 auto;
+        
+     }
 
 }
 
@@ -65,5 +99,36 @@
         height: 30rem;
         border-radius: 5%;
     }
+
+    .about .progress-wrapper {
+        margin: 1.5rem auto;
+    }
+
+    .about .progress-wrapper .progress-bar{
+       padding: 5px;
+       background-color: #00abf0;
+       border-radius: 5px;
+       width: 100%;
+       transition: width 5s ease-in-out;
+    }
+    
+    .about .progress-wrapper .percentage-tip {
+        position: relative;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        color: white;
+     }
+     .contact-me {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #00acf0a4;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        margin: 1.5rem auto 0 auto;
+        
+     }
 
 }

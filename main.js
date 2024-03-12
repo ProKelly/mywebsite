@@ -1,5 +1,9 @@
 
 
+
+
+
+
 const btn_all = document.querySelector('.btn-all');
 const btn_app = document.querySelector('.btn-app');
 const btn_api = document.querySelector('.btn-api');
@@ -102,14 +106,3 @@ function sendEmail(email, title, message) {
 }
 
 
-const hire_me_btn = document.getElementById('hire-me-btn');
-const talk_btn = document.getElementById('talk-btn');
-
-hire_me_btn.addEventListener('click', (e)=>{
-   e.preventDefault();
-   window.location.href = "./contact.html";
-});
-talk_btn.addEventListener('click', (e)=>{
-   e.preventDefault();
-   window.location.href = "./resume.html";
-});
