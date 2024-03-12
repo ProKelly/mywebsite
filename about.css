@@ -22,7 +22,7 @@
     }
     .about .photo {
         width: 21rem;
-        height: 25rem;
+        height: 30rem;
         border-radius: 20px;
         margin: 0 auto;
     }
@@ -30,7 +30,7 @@
     @media(max-width: 300px) {
         .about .photo {
             width: 15rem;
-            height: 18rem;
+            height: 24rem;
         }
     }
     
@@ -62,7 +62,7 @@
     }
     .about .photo {
         width: 25rem;
-        height: 28rem;
+        height: 30rem;
         border-radius: 5%;
     }
 
