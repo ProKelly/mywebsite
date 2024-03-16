@@ -21,7 +21,7 @@ portfolio_display_work.innerHTML = `
       </div>  
 </div>
 `;
-btn_all.style.backgroundColor = '#00abf0'
+btn_all.style.backgroundColor = 'var(--secondary-color)'
 
 
 btn_all.addEventListener('click', () =>{
@@ -37,10 +37,10 @@ btn_all.addEventListener('click', () =>{
          </div>  
    </div>
    `;
-   btn_all.style.backgroundColor = ' #00abf0';
+   btn_all.style.backgroundColor = ' var(--secondary-color)';
    btn_all.style.transitionDuration = '0.5s';
-   btn_app.style.backgroundColor = '#262f36';
-   btn_api.style.backgroundColor = '#262f36';
+   btn_app.style.backgroundColor = 'var(--primary-color)';
+   btn_api.style.backgroundColor = 'var(--primary-color)';
 });
 
 btn_app.addEventListener('click', ()=>{
@@ -52,10 +52,10 @@ btn_app.addEventListener('click', ()=>{
       </div>  
    </div>
    `;
-   btn_app.style.backgroundColor = ' #00abf0';
+   btn_app.style.backgroundColor = 'var(--secondary-color)';
    btn_app.style.transitionDuration = '0.5s';
-   btn_all.style.backgroundColor = '#262f36';
-   btn_api.style.backgroundColor = '#262f36';
+   btn_all.style.backgroundColor = 'var(--primary-color)';
+   btn_api.style.backgroundColor = 'var(--primary-color)';
 });
 btn_api.addEventListener('click', ()=>{
    portfolio_display_work.innerHTML = `
@@ -66,10 +66,10 @@ btn_api.addEventListener('click', ()=>{
       </div>  
    </div>
    `;
-   btn_api.style.backgroundColor = '#00abf0';
+   btn_api.style.backgroundColor = 'var(--secondary-color)';
    btn_api.style.transitionDuration = '0.5s';
-   btn_all.style.backgroundColor = '#262f36';
-   btn_app.style.backgroundColor = '#262f36';
+   btn_all.style.backgroundColor = 'var(--primary-color)';
+   btn_app.style.backgroundColor = 'var(--primary-color)';
 });
 
 

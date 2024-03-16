@@ -1,25 +1,55 @@
+@keyframes spiralGlow {
+    0% {
+      color: rgba(255, 255, 0, 0.8);
+      text-shadow: 
+        0 0 10px rgba(255, 255, 0, 0.8),
+        0 0 20px rgba(255, 255, 0, 0.6),
+        0 0 30px rgba(255, 255, 0, 0.4),
+        0 0 40px rgba(255, 255, 0, 0.2),
+        0 0 50px rgba(255, 255, 0, 0.1);
+      transform: rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+      color: rgba(255, 255, 0, 1);
+      text-shadow: 
+        0 0 20px rgba(255, 255, 0, 1),
+        0 0 40px rgba(255, 255, 0, 0.8),
+        0 0 60px rgba(255, 255, 0, 0.6),
+        0 0 80px rgba(255, 255, 0, 0.4),
+        0 0 100px rgba(255, 255, 0, 0.2);
+      transform: rotateZ(720deg) translateX(100px) translateY(100px) translateZ(100px) rotateY(360deg) rotateX(360deg);
+    }
+  }
+  
+  
+  
+
 
 /* mobile view  */
-@media(max-width: 800px) {
+@media(max-width: 1006px) {
 
 .header {position: fixed;top: 0;left: 0;width: 100%;padding: 20px 20px;
         background:  #08161d;display:inline;justify-content: space-evenly;
         align-items: center;z-index: 98;}
-.logo {position: relative; font-size: 16px;color: #ededed;text-decoration: none;
-    font-weight: 400; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.logo-container {perspective: 2000px;}
+.logo {position: relative; font-size: 16px;text-decoration: none;
+    font-weight: 400; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgba(255, 255, 0, 0.8); 
+    animation: spiralGlow 8s infinite alternate ease-in-out; 
+}
 .navbar a {display: none; }
 
 .sidebar {position:absolute;display: flex;flex-direction: column;width: 0;
           justify-content: start;align-items: center;background: #081b29ce;
           height: 100vh;top: 0;left: 200%;padding: 50px 0;transition: 0.5s;
-          border: 2px dotted #00abf0;}
+          border: 2px solid var(--secondary-color);}
 
 .sidebar.is-active {width: 100%;left: 0;}
 
 .sidebar a{display:block; text-align:center;padding: 15px;text-decoration: none;transition: 0.3s;color: #ededed;
         z-index: 100;width: 100%;}
 .sidebar a:visited {
-    text-decoration:underline #00abf0 1px;
+    text-decoration:underline var(--secondary-color) 1px;
 }
 .hamburger {display: block;position: fixed;width: 20px;height: 20px;background: transparent;
     border: transparent;border-radius: 50%;top: 20px;right: 30px;}
@@ -37,7 +67,7 @@
 }
 
 /* desktop view  */
-@media(min-width: 800px) {
+@media(min-width: 1006px) {
 
     .header {
         position: fixed;
@@ -61,19 +91,10 @@
         color: #ededed;
         text-decoration: none;
         font-weight: 600;
+        animation: spiralGlow 8s infinite alternate ease-in-out; 
     }
     
-    .logo::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: .4s;
-    }
+   
     
     .navbar a {
         font-size: 18px;
@@ -86,10 +107,10 @@
     
     
     .navbar a:hover{
-        color: #00abf0;
+        color: var(--secondary-color);
     }
     .navbar a:focus {
-        color: #00abf0;
+        color: var(--secondary-color);
     }  
     
     .sidebar {

@@ -1,4 +1,6 @@
 
+
+
 /* mobile view  */
 
 @media(max-width: 800px) {
@@ -18,7 +20,7 @@
     .about #status {
         display: block;
         padding: 20px 0;
-        color: #00abf0;
+        color: var(--secondary-color);
     }
     .about .photo {
         width: 21rem;
@@ -43,7 +45,7 @@
     
     .about .progress-wrapper .progress-bar{
        padding: 10px;
-       background-color: #00abf0;
+       background-color: var(--secondary-color);
        border-radius: 5px;
        width: 100%;
        transition: width 5s ease-in-out;
@@ -61,7 +63,7 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        background-color: #00acf0a4;
+        background-color: var(--secondary-color);
         padding: 10px;
         width: 100%;
         border-radius: 10px;
@@ -106,7 +108,7 @@
 
     .about .progress-wrapper .progress-bar{
        padding: 5px;
-       background-color: #00abf0;
+       background-color: var(--secondary-color);
        border-radius: 5px;
        width: 100%;
        transition: width 5s ease-in-out;
@@ -123,7 +125,7 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        background-color: #00acf0a4;
+        background-color: var(--secondary-color);
         padding: 10px;
         width: 100%;
         border-radius: 10px;

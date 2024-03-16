@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --primary-color:  rgb(1,14,41);
+    --secondary-color: rgb(186, 49, 186);
+    --main-color:  #081b29;
+    --color-green: green;
+    --color-text: #ededed;
+
+}
 
 .footer {
     position: sticky;
@@ -10,7 +18,7 @@
 }
 
 .footer strong {
-    color: #00abf0;
+    color: rgb(241, 15, 241);
 }
 
 
@@ -19,9 +27,7 @@
 @media(max-width: 800px) {
 
 *{margin: 0;padding: 0;box-sizing: border-box;font-family:'Poppins',sans-serif;}
-body {position: relative;background: #081b29;color: #ededed;}
-
-
+body {position: relative;background-color: var(--main-color);color: var(--color-text);}
 @keyframes showRight {
     100% {
         width: 0;
@@ -40,7 +46,7 @@ body {position: relative;background: #081b29;color: #ededed;}
     display: block ;
     width: 100%;
     height: 1px;
-    background-color: green;
+    background-color: var(--color-green);
 }
 .page-name p {
     font-style: italic;
@@ -55,7 +61,7 @@ body {position: relative;background: #081b29;color: #ededed;}
 
 *{margin: 0;padding: 0;box-sizing: border-box;font-family:'Poppins',sans-serif;}
 
-body {background: #081b29;color: #ededed;}
+body {background: var(--main-color);color: var(--color-text);}
 
 @keyframes showRight {
     100% {
@@ -68,18 +74,21 @@ body {background: #081b29;color: #ededed;}
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin: 10px 0;
 }
 
 .page-name .line {
     display: block ;
     width: 100%;
-    height: 1px;
-    background-color: green;
+    height: 2px;
+    margin: 10px 0;
+    background-color: var(--color-green);
 }
 .page-name p {
     font-style: italic;
     font-size: 10px;
     padding: 10px 0;
+    
 }
 }
 

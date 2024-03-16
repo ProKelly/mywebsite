@@ -4,22 +4,24 @@
     .portfolio-main {
         margin: 3rem 0.5rem;
         padding: 0.5rem;
+        animation: fadeInDown 1s ease-out;
     }
 
     .portfolio-main h2 {
         margin-bottom: 20px;
     }
     .portfolio-info>div button {
-        background-color:  #262f36;
+        background-color: var(--primary-color);
         margin-right:5px;
         padding: 10px;
         color: white;
-        box-shadow: 1px 2px 3px #262f36;
+        box-shadow: 1px 2px 3px var(--primary-color);
         border: 5px;
         border-radius: 5px;
+        animation: slideInLeft 1s ease-out; 
     }
     .portfolio-info:visited button {
-        background-color: #00abf0;
+        background-color: var(--secondary-color);
     }
     .portfolio-display-work {
         width: 100%;
@@ -30,6 +32,7 @@
         align-items: center;
         padding: 10px;
         border-radius: 20px;
+        animation: fadeInUp 1s ease-out;
     }
     .portfolio-display-work>div .porfolio-work-images {
         margin-top: 1.5rem;
@@ -40,7 +43,9 @@
     .porfolio-work-images img {
         width: 600px;
         height: 500px;
-        box-shadow: 1px 2px 3px #00abf0;
+        box-shadow: 1px 2px 3px rgb(1,14,41);
+        border-radius: 10px;
+        animation: scaleIn 1s ease-out;
     }
     @media(max-width: 610px) {
         .porfolio-work-images img {
@@ -72,19 +77,21 @@
     .portfolio-main {
         margin: 3rem 1rem;
         padding: 0.5rem;
+        animation: fadeInDown 1s ease-out;
     }
 
     .portfolio-main h2 {
         margin-bottom: 20px;
     }
     .portfolio-info>div button {
-        background-color:  #262f36;
+        background-color: var(--primary-color);
         margin-right:5px;
         padding: 10px;
         color: white;
-        box-shadow: 1px 2px 3px #262f36;
+        box-shadow: 1px 2px 3pxvar(--primary-color);
         border: 5px;
         border-radius: 5px;
+        animation: slideInLeft 1s ease-out;
     }
     .portfolio-display-work {
         width: 100%;
@@ -92,6 +99,7 @@
         height: fit-content;
         margin-top: 1.5rem;
         border-radius: 20px;
+        animation: fadeInUp 1s ease-out;
        
     }
     .portfolio-display-work>div {
@@ -108,10 +116,57 @@
     .porfolio-work-images img {
         width: 500px;
         height: 450px;
-        box-shadow: 1px 2px 3px #00abf0;
+        box-shadow: 1px 2px 3px rgb(1,14,41);
+        border-radius: 10px;
+        animation: scaleIn 1s ease-out; 
     }
     .porfolio-work-images p {
         margin: 10px;
         font-style: italic;
+    }
+}
+
+
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
