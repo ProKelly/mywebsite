@@ -40,26 +40,28 @@
 .navbar a {display: none; }
 
 .sidebar {position:absolute;display: flex;flex-direction: column;width: 0;
-          justify-content: start;align-items: center;background: #081b29ce;
-          height: 100vh;top: 0;left: 200%;padding: 50px 0;transition: 0.5s;
-          border: 2px solid var(--secondary-color);}
+          justify-content: start;align-items: center;background-color: #081b29ee;
+          height: 100dvh;top: 0;bottom: 100%;right: 200%;padding: 50px 0;transition: 0.3s;
+          }
 
-.sidebar.is-active {width: 100%;left: 0;}
+.sidebar.is-active {width: 50%;right: 50%;bottom: 0;}
 
 .sidebar a{display:block; text-align:center;padding: 15px;text-decoration: none;transition: 0.3s;color: #ededed;
         z-index: 100;width: 100%;}
-.sidebar a:visited {
-    text-decoration:underline var(--secondary-color) 1px;
+.sidebar a :active, .sidebar a:hover, .sidebar a:link {
+    color: var(--secondary-color);
 }
-.hamburger {display: block;position: fixed;width: 20px;height: 20px;background: transparent;
+
+
+.hamburger {display: block;position: fixed;width: 25px;height: 25px;background: transparent;
     border: transparent;border-radius: 50%;top: 20px;right: 30px;}
 
 .hamburger .bar, .hamburger::after, .hamburger::before {content: '';display: block;
-    background-color: white;width: 100%; height: 2px;margin: 2px 0;overflow: hidden;
+    background-color: white;width: 100%; height: 3px;margin: 3.5px 0;overflow: hidden;
     transition: 0.5s;}
 .hamburger.is-active .bar{display: none;}
 
-.hamburger.is-active::after {transform: rotate(45deg) translate(-2px, -2px) ;}
+.hamburger.is-active::after {transform: rotate(45deg) translate(-4px, -4px) ;}
 
 .hamburger.is-active::before {transform: rotate(-45deg);}
 

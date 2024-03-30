@@ -86,7 +86,7 @@
         margin: 5px;
         background:transparent;
         border-radius: 50%;
-        color:var(--secondary-color);
+        color:var(--secondarylow-color);
         text-decoration: none;
         z-index: 1;
         overflow: hidden;
@@ -95,7 +95,7 @@
 
     .home .projects {
         display: block;
-        background-color: #00acf00b;
+        background-color: #00acf000;
         width: 100%;
         height: 350px;
         margin: 2rem auto 0 auto;
@@ -106,6 +106,14 @@
        
     }
 
+    .home .projects .project{
+        border-radius: 20px;
+    }
+
+    .home .projects .project img {
+      border-radius: 15px;
+    }
+
     .home .projects-head {
         display: block;
         margin: 1.5rem auto;
@@ -113,6 +121,7 @@
         text-align: center;
         position: relative;
         animation: MoveBackAndForth 5s ease-in-out infinite;
+        border-radius: 10px;
     }
     @keyframes MoveBackAndForth {
         0% {
@@ -144,6 +153,14 @@
         height: 100%;
         background-color: #f000d815;
         clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        animation: rotateEffect 5s infinite alternate ease-in-out;
+    }
+
+    .project .effectt {
+        width: 100%;
+        height: 100%;
+        background-color: #f000d815;
+        clip-path:ellipse();
         animation: rotateEffect 5s infinite alternate ease-in-out;
     }
 
@@ -266,11 +283,11 @@
         align-items: center;
         width: 150px;
         height: 100%;
-        background:var(--secondary-color);
+        background:var(--secondarylow-color);
         border: 2px solidvar(--secondary-color);
         border-radius: 8px;
         font-size: 19px;
-        color: var(--main-color);
+        color: var(--color-text);
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
@@ -280,18 +297,20 @@
     }
     
     .btn-box a:hover {
-        color:var(--secondary-color);    
+        color:var(--color-text); 
+        border: 1px solid var(--secondarylow-color);   
     }
     
     .btn-box a:nth-child(2) {
         background: transparent;
-        color:var(--secondary-color);
+        color:var(--color-text);
+        border: 1px solid var(--secondarylow-color);
     }
     .btn-box a:nth-child(2):hover {
-        color: var(--main-color);
+        color: var(--color-text);
     }
     .btn-box a:nth-child(2)::before {
-        background-color:var(--secondary-color);
+        background-color:var(--secondarylow-color);
     }
     .btn-box a::before {
         content: '';
